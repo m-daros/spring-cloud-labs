@@ -1,0 +1,33 @@
+spring:
+
+  application:
+    name: service-client
+
+  cloud:
+    zookeeper:
+#      connect-string: localhost:2181,localhost:2182,localhost:2183,localhost:2184,localhost:2185
+
+      # Plain spring-boot:run
+      connect-string: localhost:2181
+
+     # Plain Docker
+#      connect-string: 172.18.0.2:2181
+
+      # Kubernetes
+#      connect-string: 10.108.98.19:2181
+      
+      config:
+        enabled: true
+        root: /configuration/configuration-service/services
+        defaultContext: shared
+        profileSeparator: '::'
+ 
+    bus:
+      trace:
+        enabled: true       
+        
+#  rabbitmq:
+#    host: localhost
+#    port: 15672
+#    username: guest
+#    password: guest        

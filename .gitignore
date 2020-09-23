@@ -1,0 +1,9 @@
+.project
+.settings/
+service-provider/target/
+service-provider/.classpath
+service-client/target/
+service-client/.classpath
+/.idea/**
+/service-provider/service-provider.iml
+/spring-cloud-labs-pom.iml

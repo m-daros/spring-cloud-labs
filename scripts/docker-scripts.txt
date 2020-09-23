@@ -1,0 +1,23 @@
+# service-provider
+
+# Package spring-boot application
+mvn clean package
+
+# Build Docker image
+docker build -t mdaros-spring-boot-labs/service-provider .
+
+# Start a Docker container
+docker run -p <EXTERNAL-PORT>:8080 --network zookeeper_default mdaros-spring-boot-labs/service-provider
+
+# ---------------------------------------------------------------------------------------------------
+
+# service-client
+
+# Package spring-boot application
+mvn clean package
+
+# Build Docker image
+docker build -t mdaros-spring-boot-labs/service-client .
+
+# Start a Docker container
+docker run -p <EXTERNAL-PORT>:8080 --network zookeeper_default mdaros-spring-boot-labs/service-client

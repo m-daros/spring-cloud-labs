@@ -1,0 +1,1 @@
+helm install incubator/zookeeper --version 1.0.0

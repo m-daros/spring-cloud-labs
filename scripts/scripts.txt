@@ -1,0 +1,10 @@
+#minikube start --cpus 4 --memory 6144
+minikube start --cpus 4 --memory 8192
+minikube dashboard
+minikube docker-env
+
+Create Dockerfile
+
+Docker image
+docker build -t mdaros-spring-boot-labs/service-provider .
+

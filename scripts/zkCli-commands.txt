@@ -1,0 +1,9 @@
+create /configuration ''
+create /configuration/configuration-service ''
+create /configuration/configuration-service/services ''
+create /configuration/configuration-service/services/service-provider ''
+create /configuration/configuration-service/services/service-provider/prop1 value1
+create /configuration/configuration-service/services/service-provider/prop2 value2
+create /configuration/configuration-service/services/service-client ''
+create /configuration/configuration-service/services/service-client/fallbackProp1 fallback1
+create /configuration/configuration-service/services/service-client/fallbackProp2 fallback2
